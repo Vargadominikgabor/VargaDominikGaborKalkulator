@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="calculator.js"></script>
+    <title>Téglatest</title>
+</head>
+
+<body>
+    <h1>Téglatest</h1>
+
+    <div class="card-deck" style="margin-top: 70px;">
+
+        <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="card text-center bg">
+                <h5 class="card-title">Téglatest</h5>
+              <img src="teglatest-terfogata-1.jpg" class="card-img-bottom"/>
+              <div class="card-body">
+                <p class="card-text">felszin: A=2*(a*b+a*c+b*c)</p>
+                <p class="card-text">térfogat: V=a*b*c</p>
+                <a href="index.html" class="btn btn-warning">Vissza a főmenüre</a>
+              </div>
+            </div>
+        </div>
+    <br><br>
+    <form action="/action_page.php">
+        <p style="color: white;">Irja be a kivánt számot:</p>
+        <label for="" style="color: white;">a:</label>
+        <input type="number" id="teglatesta" name="teglatesta" oninput="teglatest()" min="0">
+        <select id="mertek" name="mertek" form="mertek">
+            <option value="mm">mm</option>
+            <option value="cm">cm</option>
+            <option value="dm">dm</option>
+            <option value="m">m</option>
+        </select>
+        <br><br>
+        <label for="" style="color: white;">b:</label>
+        <input type="number" id="teglatestb" name="teglatestb" oninput="teglatest()" min="0">
+        <select id="mertek" name="mertek" form="mertek">
+            <option value="mm">mm</option>
+            <option value="cm">cm</option>
+            <option value="dm">dm</option>
+            <option value="m">m</option>
+        </select>
+        <br><br>
+        <label for="" style="color: white;">c:</label>
+        <input type="number" id="teglatestc" name="teglatestc" oninput="teglatest()" min="0">
+        <select id="mertek" name="mertek" form="mertek">
+            <option value="mm">mm</option>
+            <option value="cm">cm</option>
+            <option value="dm">dm</option>
+            <option value="m">m</option>
+        </select>
+        <br> <br> <br>
+        <label for="" style="color: white;">felszin:</label>
+        <input type="number" id="teglatest1" name="teglatest1" style="color: white;" disabled>
+        <br> <br>
+        <label for="" style="color: white;">térfogat:</label>
+        <input type="number" id="teglatest2" name="teglatest2" style="color: white;" disabled>
+        <br> <br>
+    </form>
+
+</body>
+</html>

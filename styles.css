@@ -1,0 +1,17 @@
+body {
+  background-image: url('math-bg3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: auto;
+  width: 100%;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 8vw;
+
+}
+

@@ -42,4 +42,3 @@ function teglalap() {
     var térfogat = a * b * c;
     document.getElementById("teglatest2").value = térfogat;
   }
-

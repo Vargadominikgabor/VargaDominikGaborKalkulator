@@ -7,6 +7,16 @@ function teglalap() {
   
     var terulet = a * b;
     document.getElementById("teglalap1").value = terulet;
+
+      if (a <= 0) {
+       alert("A nulla és a minusz számok nem elfogadottak!")
+          teglalapa.reset()
+      }
+
+      if (b <= 0) {
+        alert("A nulla és a minusz számok nem elfogadottak!")
+          teglalapb.reset()
+      }
   }
 
   function rombusz() {
@@ -19,6 +29,21 @@ function teglalap() {
   
     var terulet = e * f / 2;
     document.getElementById("rombusz1").value = terulet;
+
+    if (a <= 0) {
+      alert("A nulla és a minusz számok nem elfogadottak!")
+         teglalapa.reset()
+     }
+
+     if (e <= 0) {
+       alert("A nulla és a minusz számok nem elfogadottak!")
+         teglalapb.reset()
+     }
+     
+     if (f <= 0) {
+      alert("A nulla és a minusz számok nem elfogadottak!")
+         teglalapa.reset()
+     }
   }
 
   function kocka() {
@@ -29,6 +54,11 @@ function teglalap() {
   
     var térfogat = a * a * a;
     document.getElementById("kocka2").value = térfogat;
+
+    if (a <= 0) {
+      alert("A nulla és a minusz számok nem elfogadottak!")
+         teglalapa.reset()
+     }
   }
 
   function teglatest() {
@@ -41,4 +71,19 @@ function teglalap() {
   
     var térfogat = a * b * c;
     document.getElementById("teglatest2").value = térfogat;
+
+    if (a <= 0) {
+      alert("A nulla és a minusz számok nem elfogadottak!")
+         teglalapa.reset()
+     }
+
+     if (b <= 0) {
+       alert("A nulla és a minusz számok nem elfogadottak!")
+         teglalapb.reset()
+     }
+
+     if (c <= 0) {
+      alert("A nulla és a minusz számok nem elfogadottak!")
+         teglalapa.reset()
+     }
   }
